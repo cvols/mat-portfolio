@@ -30,6 +30,10 @@
     padding-top: 30%;
 }
 
+.pic-padding {
+    margin-bottom: 50px;
+}
+
 header {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background.jpeg);
     background-attachment: fixed;
@@ -92,7 +96,6 @@ footer {
     main,
     footer {
         padding-left: 0;
-        padding-right: 0;
     }
 }
 
@@ -147,3 +150,9 @@ footer {
 }
 
 /* media queries */
+
+@media only screen and (max-width:992px) {
+    .flow-text {
+        font-size: 99%;
+    }
+}
