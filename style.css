@@ -169,4 +169,8 @@ footer {
         text-align: center;
     }
 
+    .custom-row {
+        margin: 100px 0px;
+    }
+
 }
