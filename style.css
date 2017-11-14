@@ -155,4 +155,8 @@ footer {
     .flow-text {
         font-size: 99%;
     }
+
+    .small {
+        font-size: 300%;
+    }
 }
