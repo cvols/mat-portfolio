@@ -1,27 +1,17 @@
 /* colors */
 
-.cvblue {
-    background-color: #7486F2;
+.cvred {
+    background-color: #f44336;
 }
 
-.cvblue-text {
-    color: #071b6d;
-}
-
-.cvpurple {
-    background-color: #9035e8;
-}
-
-.cvpurple-text {
-    color: #9035e8;
-}
-
-.cvgreen {
-    background-color: #33eac6;
-}
-
-.cvgreen-text {
+.cvwhite-text {
     color: #fefffe;
+}
+
+/* resume button */
+
+#resume {
+    border: 1px solid white;
 }
 
 /* background image */
@@ -35,7 +25,7 @@
 }
 
 header {
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background.jpeg);
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/beachball.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -140,13 +130,13 @@ footer {
 /* button */
 
 .hover:hover {
-    background-color: #5c72f0;
+    background-color: #f21c0d;
 }
 
 /* footer */
 
 .footer-bg {
-    border-top: 5px solid #ffd0d0;
+    border-top: 5px solid yellow;
     padding-bottom: 1px;
 }
 
