@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
@@ -53,7 +55,6 @@
                 </div>
             </div>
         </div>
-
     </header>
 
     <main>
@@ -319,43 +320,40 @@
         <div class="row custom-row">
             <div class="col s12">
                 <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input id="first_name" type="text" class="validate">
-                        <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Last Name</label>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">email</i>
-                            <input id="email" type="email" class="validate">
-                            <label for="email" data-error="wrong" data-success="right">Email</label>
+                    <form action="https://formspree.io/chris.volonnino@gmail.com" method="POST" id="contact=form">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input type="text" name="first_name" class="validate" id="first_name" required>
+                            <label for="first_name">First Name</label>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">mode_edit</i>
-                            <textarea id="textarea" class="materialize-textarea"></textarea>
-                            <label for="textarea">Message</label>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input type="text" name="last_name" class="validate" id="last_name" required>
+                            <label for="last_name">Last Name</label>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 center">
-                        <a class="btn waves-effect waves-light btn-large cvred cvwhite-text z-depth-5 hover" type="submit" name="action">Submit
-                        <i class="material-icons right">send</i>
-                        </a>
-                    </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input type="email" name="email" class="validate" id="email" required>
+                                <label for="email" data-error="wrong" data-success="right">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">mode_edit</i>
+                                <textarea id="textarea" name="message" class="materialize-textarea" required></textarea>
+                                <label for="textarea">Message</label>
+                            </div>
+                        </div>
+                        <div class="col s12 center">
+                            <button type="submit" id="submit" class="btn waves-effect waves-light btn-large cvred cvwhite-text z-depth-5 hover">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-
-
-
     </main>
 
     <footer class="page-footer footer-bg blue-grey darken-2">

@@ -53,4 +53,29 @@ $(document).ready(function () {
             },
             4000);
     })
+
+    $('#contact-form').submit(function (e) {
+        var name = $('#first_name').val()
+        var lastname = $('#last_name').val()
+        var email = $('#email').val()
+        var message = $('#textarea').val()
+
+        if (name == '' || lastname == '' || email == '' || message == '') {
+            alertify.error('Please fill out the entire form')
+        } else {
+            $.ajax({
+                url: 'https://formspree.io/chris.volonnino@gmail.com',
+                method: 'POST',
+                data: $(this).serialize(),
+                datatype: 'json'
+            })
+            e.preventDefault()
+            $('#first_name').val('')
+            $('#last_name').val('')
+            $('#email').val('')
+            $('#textarea').val('')
+            alertify.success('Message sent!')
+        }
+    })
+
 });
