@@ -1,11 +1,15 @@
 /* colors */
 
 .cvred {
-    background-color: #f44336;
+    background-color: #982546;
 }
 
 .cvwhite-text {
     color: #fefffe;
+}
+
+.cvblue {
+    background-color: #386e77
 }
 
 /* resume button */
@@ -25,7 +29,7 @@
 }
 
 header {
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/beachball.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url(images/bg3.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -130,7 +134,11 @@ footer {
 /* button */
 
 .hover:hover {
-    background-color: #f21c0d;
+    background-color: #cd325e;
+}
+
+.hover2:hover {
+    background-color: #49909c;
 }
 
 /* footer */
