@@ -8,6 +8,10 @@
     background-color: #982546;
 }
 
+.cvred-text {
+    color: #982546;
+}
+
 .cvwhite-text {
     color: #fefffe;
 }
@@ -129,6 +133,10 @@ footer {
 
 .icon {
     margin-top: 1px;
+}
+
+.indent {
+    margin-left: 20px;
 }
 
 /* contact me */
